@@ -80,5 +80,9 @@ public class Payroll {
                 return hours;
             }
         }
+
+        public static void  test(){
+
+        }
     }
 
