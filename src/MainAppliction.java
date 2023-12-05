@@ -5,6 +5,7 @@ public class MainApplication {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Payroll payroll = new Payroll();
+        System.out.print("my change");
 
 
         // Prompt the user to add employees
