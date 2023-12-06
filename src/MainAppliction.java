@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class MainApplication {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Payroll payroll = new Payroll();
+        Employee payroll = new Employee();
         System.out.print("my change");
 
 
