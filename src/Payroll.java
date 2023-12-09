@@ -1,10 +1,9 @@
 import java.util.ArrayList;
 
-// Payroll.java
 public class Payroll {
     private ArrayList<Employee> employees;
 
-    public Payroll() {
+    public Payroll(){
         this.employees = new ArrayList<>();
     }
 
@@ -24,8 +23,8 @@ public class Payroll {
         for (Employee employee : employees) {
             System.out.println("Employee ID: " + employee.getEmployeeId());
             System.out.println("Name: " + employee.getName());
-            System.out.println("Gross Pay: $" + employee.calculateGrossPay());
-            System.out.println("--------------------------");
+            System.out.println("Gross pay: $" + employee.calculateGrossPay());
+            System.out.println("---------------------------");
         }
     }
 }

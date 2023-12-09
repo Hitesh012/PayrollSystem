@@ -5,6 +5,7 @@ public class MainApplication {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Payroll payroll = new Payroll();
+        java.util.Date date = new java.util.Date();
 
         // Prompt the user to add employees
         char addMore;
@@ -28,6 +29,8 @@ public class MainApplication {
         } while (addMore == 'y' || addMore == 'Y');
 
         // Display employee details and total payroll
+        System.out.println("Payroll for Today's Date: " + date);
+        System.out.println("--------------------------");
         payroll.displayEmployeeDetails();
         System.out.println("--------------------------");
         System.out.println("Total Payroll: $" + payroll.calculateTotalPayroll());
