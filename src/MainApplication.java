@@ -4,9 +4,7 @@ import java.util.Scanner;
 public class MainApplication {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Employee payroll = new Employee();
-        System.out.print("my change");
-
+        Payroll payroll = new Payroll();
 
         // Prompt the user to add employees
         char addMore;
@@ -22,23 +20,18 @@ public class MainApplication {
             System.out.print("Hours Worked: ");
             double hoursWorked = scanner.nextDouble();
 
-
             Employee newEmployee = new Employee(employeeId, name, hourlyRate, hoursWorked);
             payroll.addEmployee(newEmployee);
-
 
             System.out.print("Do you want to add another employee? (y/n): ");
             addMore = scanner.next().charAt(0);
         } while (addMore == 'y' || addMore == 'Y');
-
 
         // Display employee details and total payroll
         payroll.displayEmployeeDetails();
         System.out.println("--------------------------");
         System.out.println("Total Payroll: $" + payroll.calculateTotalPayroll());
 
-
         scanner.close();
     }
 }
-

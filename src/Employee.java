@@ -36,15 +36,3 @@ public class Employee {
 
     // Add Additional getters and setters as needed
 }
-
-// Payroll.java
-public class Payroll {
-    private ArrayList<Employee> employees;
-
-    public Payroll() {
-        this.employees = new ArrayList<>();
-    }
-
-    // Add methods to manipulate the list of employees as needed
-}
-
